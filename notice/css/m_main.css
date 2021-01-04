@@ -1,0 +1,135 @@
+@charset "utf-8";
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+}
+* {font-family: 'NanumSquare', sans-serif !important;}
+
+
+@media all and (max-width: 500px){ /*모바일*/
+    .info {font-size: 12px;}
+    .info a {padding-left:0; padding-right: 10px;}     
+    #menu {display: none;}
+    .slide2 {display: block;}
+    #m_menu {display: block;}
+    #m_slide {display: block;}
+    #main4 {display: none;}
+    #m_wrap {display: block!important;}
+    #m_main4 {display: block!important;}
+    #footer {display: none;}
+    #m_footer {display: block!important;}
+    #m_hamberger_menu {display: block!important;}
+    
+    
+    #logo {position: relative;}
+    #logo img{
+            position: absolute;
+            display: block;
+            width: 80px; height: 47px;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+           }
+    #logo h1{display:none;}
+    
+    #m_hamberger_menu {
+        width: 35px;
+        position: absolute; left: 15px; top: 60px;
+        cursor: pointer;
+    }
+    .m_close {
+        width: 35px;
+        font-size: 35px; color: #fff; font-weight: bold;
+        position: absolute; left: 15px; top: 60px;
+        cursor: pointer;
+        background-color: #fec034;
+    }
+    #m_hamberger_menu img {width: 35px;;}
+    #m_menu {
+        width: 55%; height: 500px; 
+        background: white; position: absolute; top:120px;
+        line-height: 25px; z-index: 500; _display: none;
+    }
+    #m_menu .m_sub {overflow: hidden; padding-left: 20px;}
+    #m_menu .m_sub>li {width: 50%;}
+    #m_menu .m_sub>li>ul {padding-left:20px;}
+    #m_menu .m_sub>li>ul>li {width: 100%;}
+    
+    /*이용안내*/
+    #notice0 h1 {
+        width: 200px; text-align: center; 
+        padding-top: 20px; padding-bottom: 40px; font-size: 30px;
+    }
+
+    /*운영시간*/
+    .time {
+        width: 200px; position: relative; float: left; clear: both;
+        padding-left: 20px; _padding-bottom: 150px;
+    }
+    .time img {width: 35px; position:relative; top:35px;}
+
+    .time0 {padding-left: 40px; display: inline-block;}
+    .time1 {width: 230px;}
+    .time h2 { left: 20%; font-size: 30px;}
+    .time p {color: #b9b9b9;}
+    .time_list {width: 200px; border: 1px solid #b9b9b9;}
+    .time_list li {
+        width: 200px; height: 100px; 
+        border: 1px solid #b9b9b9;
+        font-size: 15px; text-align: left; line-height: 30px; padding-left: 10px; padding-right: 10px;
+    }
+
+    /*상담문의*/
+    .consult { 
+        width: 230px; position: relative; float: right; _padding-bottom: 150px; display: inline-block;
+    }
+    .consult img {width: 35px; position:relative; top:35px;}
+    .consult0 {padding-left: 40px; display: inline-block;}
+    .consult h2 {left: 20%; font-size: 30px;}
+    .consult p {color: #b9b9b9;}
+    .consult_list {width: 210px; border: 1px solid #b9b9b9;}
+    .consult_list li {
+        width: 210px; height: 127px; 
+        border: 1px solid #b9b9b9;
+        font-size: 15px; text-align: left; line-height: 30px;
+        padding-left: 10px; padding-right: 10px;
+    }
+
+    /*안내사항*/
+    .notice {
+        width: 200px; position: relative; float: left; clear: both;
+        padding-left: 20px;
+    }
+    .notice img {width: 35px; position: relative; top: 35px;}
+    .notice0 {padding-left: 40px; display: inline-block;}
+    .notice h2 { left: 20%; font-size: 30px;}
+    .notice p {color: #b9b9b9;}
+    .notice_list {width: 200px; border: 1px solid #b9b9b9;}
+    .notice_list li {
+        width: 200px; height:200px; 
+        border: 1px solid #b9b9b9;
+        font-size: 15px; text-align: left; line-height: 30px; padding-left: 10px; padding-right: 10px;
+    }
+    .notice_list>li:first-child {height: 250px;}
+
+    /*오시는길*/
+    .map {width: 230px; position: relative; float: right;}
+    .map img {width: 35px; position: relative; top: 35px;}
+    .map0 {padding-left: 40px; display: inline-block;}
+    /*.map .map2 {width: 90%;}*/
+    .map h2 { left: 20%; font-size: 30px;}
+    .map p {color: #b9b9b9;}
+    .map_list {width: 210px; border: 1px solid #b9b9b9;}
+    .map_list li {
+        width: 210px; height: 200px; 
+        border: 1px solid #b9b9b9;
+        font-size: 15px; text-align: left; line-height: 30px; padding-top: px;
+        padding-left: 10px;
+    }
+    .map_list>li:last-child {height: 250px;}
+    .map_list .map_list1 {padding-top: 10px;}
+}
+
+
+       @media all and (min-width: 451px) and (max-width: 1024px) { /*태블릿*/
+    
+}
