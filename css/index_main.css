@@ -1,0 +1,506 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@media all and (min-width: 1024px) {
+/*header*/
+* {font-family: 'Roboto', sans-serif;}
+.clear:after {content: ''; display: block; clear: both;}
+.header{width: 96%; height: 50px; margin:auto; overflow: hidden;}
+.box {height: 100vh;}
+.m_profile2_1 , .m_profile2_2, .m_profile2_3 {display: none;}
+.m_skill {display: none;}
+.m_portfolio {display: none;}
+.t_portfolio {display: none;}
+
+
+
+.sub {
+    float: right;
+    padding-top: 15px; overflow: hidden;
+    z-index: 1;
+}
+.sub li {float: left;}
+.sub li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+.sub li span {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: #4165af;
+    _display: inline-block;
+    cursor: pointer;
+}
+
+.subfixed {
+    width: 96%;
+    background: white;
+    position: fixed;
+    left: 79%;
+    _float: right;
+    top: 0px;
+    _z-index: -99999px;
+}
+/*
+.clicked_sub_li_span {
+    color: #b2aed3;
+    text-shadow: -1px 0 #2d2d2d, 0 1px #2d2d2d, 1px 0 #2d2d2d, 0 -1px #2d2d2d;
+}
+*/
+/*main1*/
+.main {
+    width: 96%;
+    height: 90vh;
+    margin: auto;
+    border: 3px solid #b2aed3;
+}
+.main1_1 {
+    position: relative;
+    width: 540px;
+    font-size: 100px;
+    color: #b2aed3;
+    margin: auto;
+    margin-top: 300px;
+}
+.m1 {
+    font-weight: bold;
+}
+.m2 {
+    position: absolute;
+    top: 110px;
+    right: 22px;
+    width: 230px;
+    font-size: 30px;
+    color: #4165af;
+}
+.m3 {
+    position:absolute;
+    bottom: 50px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 170px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+/*profile*/
+.profile {
+    width: 96%;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+}
+.profile p{color: #2d2d2d;}
+.profile p span{color: #2d2d2d;}
+.profile p a {color: #2d2d2d;}
+.profile1 {
+    width: 100%;
+    height: 45vh;
+    background:#d5d3e5;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.profile1_1 {
+    width: 200px;
+    height: 10vh;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.profile1_1 p {
+    font-size: 50px;
+    font-weight: bold;
+    color: #2d2d2d;
+    text-align: center;
+    margin-top: 10px;
+}
+.profile1_1 hr {
+    width: 195px; 
+    height: 10px;
+    border: 1px solid #d5d3e5;
+    background: #4165af;
+    margin: auto;
+    color: #4165af;
+}
+.profile1_2 {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    background: #d5d3e5;
+    position: relative;
+    top: 20px;
+}
+.vertical1, .vertical2, .vertical3 {
+    border: 5px solid #d5d3e5;
+    background-color: #d5d3e5;
+    border-radius: 30px;
+    width: 0.1px;
+    height: 140px;
+    float: left;
+    margin-right: 15px;
+}
+
+.profile1_2_1 {
+    width: 200px;
+    position: relative; left: 75%; 
+}
+.profile1_2_1>p:nth-child(1) {
+    font-size: 35px;
+    font-weight: bold;
+    color: #2d2d2d;
+    position: relative;
+    left: 14%;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+.profile1_2_1>p:nth-child(2) {
+    font-size:20px;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+.profile1_2_1>p:nth-child(3) {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+
+.profile1_3 {
+    width: 50%;
+    float: left;
+}
+.profile1_3_1 {
+    position: relative; left: 10%; top: -1vh;
+}
+.profile1_3_1 img{ 
+    width: 150px;
+    border-radius: 10px;
+}
+
+
+.profile2 {
+    margin-top: 10vh;
+    overflow: hidden;
+    margin-bottom: 5vh;
+    
+}
+.profile2_1 {
+    width: 33.3%;
+    float: left; overflow: hidden;
+}
+.profile2_1 p {
+    font-size: 15px;
+    font-weight: bold;
+}
+.profile2_1>p:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:underline;
+    padding-bottom: 20px;
+}
+.profile2_1>p>span {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.profile2_2 {
+    width: 33.3%;
+    float: left; overflow: hidden;
+}
+.profile2_2 p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.profile2_2>p:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:underline;
+    padding-bottom: 20px;
+}
+.profile2_2>p>span {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.h1, .h2 {
+    margin-left: 67px;
+}
+
+.profile2_3 {
+    width: 33.3%;
+    float: left; overflow: hidden;
+}
+.profile2_3>p:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:underline;
+    padding-bottom: 20px;
+}
+.profile2_3 img {
+    width: 75px;
+    padding: 10px;
+}
+
+/*skill*/
+.blank1 {width: 96%; height: 50px; overflow: hidden;}
+.skill {
+    width: 96%;
+    height: 90vh;
+    margin: auto;
+    border: 3px solid #b2aed3;
+    overflow: hidden;
+}
+.skill1 {
+    width: 150px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 15px; 
+}
+.skill img {
+    width: 50px;
+}
+
+.skill1>p{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #2d2d2d;
+    margin-top: 10px;
+}
+.skill1 hr {
+    width: 130px; 
+    height: 10px;
+    border: 1px solid #fefefe;
+    background: #4165af;
+    margin: auto;
+    color: #4165af;
+}
+
+.skill2 {
+    width: 96%;
+    margin: auto;
+}
+.skill2 p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2d2d2d;
+    line-height: 40px;
+}
+
+.skill2 p:nth-child(1) {
+    font-size: 35px;
+    font-weight: bold;
+    color: #2d2d2d;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.skill2_1, .skill2_2, .skill2_3 {
+    margin: 1.5%;
+    padding: 1%;
+}
+
+.skill2_1 {
+    width: 30%;
+    height: 68vh;
+    float: left;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.skill2_1_2 {
+    margin-bottom: 40px;
+}
+.skill2_1_2 img, .skill2_1_3 img {
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+
+.skill2_2 {
+    width: 30%;
+    height: 68vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    float: left;
+}
+.skill2_2_2 {
+    margin-bottom: 110px;
+}
+.skill2_2_2 img, .skill2_2_3 img {
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+.skill2_3 {
+    width: 30%;
+    height: 68vh;
+    float: left;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.skill2_3_2 img {
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+/*portfolio*/
+.portfolio {
+    width: 96%;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+}
+.portfolio1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #2d2d2d;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.portfolio1 hr {
+    width: 260px; 
+    height: 10px;
+    border: 1px solid #fefefe;
+    background: #4165af;
+    margin: auto;
+    color: #4165af;
+}
+.portfolio2 {
+    width: 96%;
+    height: 30vh;
+    overflow: hidden;
+    clear: both;
+}
+.portfolio2_1 {
+    width: 50%;
+    height: 30vh;
+    float: left;
+    overflow: hidden;
+}
+.portfolio2_1 img {
+    width: 530px;
+    margin:  auto;
+    margin-left: 25%;
+}
+.portfolio2_2 {
+    width: 50%;
+    height: 30vh;
+    float: left;
+    overflow: hidden;
+    
+}
+.portfolio2_2>p:nth-child(1) {
+    font-size: 35px;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+}
+.portfolio2_2>p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d2d2d;
+    line-height: 45px;
+    margin-left: 30px;
+}
+.portfolio2_2>p>span {
+    font-size: 15px;
+    font-weight: bold;
+}
+.portfolio3 {
+    width: 96%;
+    height: 10vh;
+    _margin-bottom: 30px;
+}
+.portfolio4 {
+    width: 96%;
+    height: 30vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.portfolio4_1 {
+    width: 50%;
+    height: 30vh;
+    float: left;
+    overflow: hidden;
+}
+.portfolio4_1 img {
+    width: 350px;
+    height: 270px;
+    margin: auto;
+    margin-left: 30%;
+}
+.portfolio4_2 {
+    width: 50%;
+    height: 30vh;
+    float: left;
+    overflow: hidden;
+    
+}
+.portfolio4_2>p:nth-child(1) {
+    font-size: 35px;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+}
+.portfolio4_2>p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d2d2d;
+    line-height: 45px;
+    margin-left: 30px;
+    position: relative;
+    left:-30px;
+}
+.portfolio4_2>p>span {
+    font-size: 15px;
+    font-weight: bold;
+}
+.portfolio5 {
+    width:96%;
+    height: 10vh;
+    margin: auto;
+}
+button {
+    border: 2px solid #2d2d2d;
+    border-radius: 20px;
+    background: #fefefe;
+    padding: 15px;
+    margin: 0px;
+    margin-left: 15px;
+}
+.b3_1, .b3_2, .b3_3, .b3_4 {
+    position: relative; left: 25%
+}
+.b3_5 {
+    position: relative; left: 30%;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.b5_1, .b5_2, .b5_3, .b5_4 {
+    position: relative; left: 23%
+}
+.b5_5 {
+    position: relative; left: 28%;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 50px;
+    background:#beaed3;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    color: #fefefe;
+}
+}
