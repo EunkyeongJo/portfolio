@@ -22,6 +22,7 @@
     <script src="js/swiper.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <style>
+/*        .portfolio2__2 {display: none;}*/
         .sub li a.color_change {
             color: #b2aed3;
             text-shadow: -1px 0 #2d2d2d, 0 1px #2d2d2d, 1px 0 #2d2d2d, 0 -1px #2d2d2d;
@@ -46,32 +47,6 @@
                };
             });
         });
-//        스크롤 위치에 따라 메뉴 색깔 변경
-//        $(document).ready(function(){
-//         $(window).scroll(function(){
-//                var ht = $(window).height();
-//                var check=10;
-//                var scroll=$(window).scrollTop()+1;
-//                if(check == 10){
-//                if(scroll>ht*0 && scroll<ht*1){
-//                    $(".sub>li>a").removeClass();
-//                    $(".h").eq(0).addClass("on");
-//                }
-//                if(scroll>ht*1 && scroll<ht*2){
-//                    $(".sub>li>a").removeClass();
-//                    $(".pe").eq(1).addClass("on");
-//                }
-//                if(scroll>ht*2 && scroll<ht*3){
-//                    $(".sub>li>a").removeClass();
-//                    $(".s").eq(2).addClass("on");
-//                }
-//                if(scroll>ht*3 && scroll<ht*4){
-//                    $(".sub>li>a").removeClass();
-//                    $(".po").eq(3).addClass("on");
-//                };
-//                };
-//            });
-//            });
         
 //        메뉴 클릭 시 색깔 변경
         $(document).ready(function(){
@@ -110,6 +85,11 @@
                 $(".sub li").eq(i).addClass("on");
             });
         });
+        
+//        버튼
+//        $(document).ready(function(){
+//            var
+//        });
     </script>
 </head>
 <body>
@@ -355,8 +335,7 @@
                  <hr>
              </div>
 <!--             연디저트-->
-<!--
-             <div class="portfolio2 clear">
+             <div class="portfolio2__1 clear">
                  <div class="portfolio2_1 clear">
                      <img src="img/yeon_dessert1.png">
                  </div>
@@ -368,8 +347,15 @@
                      <p>사용기술 : <span>HTML5, CSS3</span></p>
                  </div>
              </div>
--->
-             <div class="portfolio2 clear">
+            <div class="portfolio3__1 clear">
+                     <button class="b3_1"></button>
+                     <button type="button" onclick="onDisplay('.portfolio2__2')" class="b3_2"></button>
+                     <button class="b3_3"></button>
+                     <button class="b3_4"></button>
+                     <button type="button" onclick="window.open('https://eunkyeongjo.github.io/yeon_dessert/')" class="b3_5_1">MORE VIEW</button>
+            </div>
+<!--            바우라움-->
+             <div class="portfolio2__2 clear">
                  <div class="portfolio2_1 clear">
                      <img src="img/bowraum_1.png">
                  </div>
@@ -382,13 +368,14 @@
                  </div>
              </div>
              
-             <div class="portfolio3 clear">
+             <div class="portfolio3__2 clear">
                      <button class="b3_1"></button>
                      <button class="b3_2"></button>
                      <button class="b3_3"></button>
                      <button class="b3_4"></button>
-                     <button class="b3_5">MORE VIEW</button>
+                     <button type="button" onclick="window.open('https://eunkyeongjo.github.io/bowraum/')" class="b3_5_2">MORE VIEW</button>
               </div>
+<!--
              <div class="portfolio4 clear">
                  <div class="portfolio4_1 clear">
                      <img src="img/monitor1.png" alt="모니터1">
@@ -408,6 +395,7 @@
                      <button class="b5_4"></button>
                      <button class="b5_5">MORE VIEW</button>
               </div>
+-->
          </div>
 <!--         모바일-->
          <div class="m_portfolio" >
